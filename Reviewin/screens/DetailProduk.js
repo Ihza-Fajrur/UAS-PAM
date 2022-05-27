@@ -1,12 +1,17 @@
-import { useState } from 'react';
+import React,{ useState } from 'react';
 import { FlatList, StyleSheet, Text, View, Image, ScrollView, Pressable } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function DetailProduk({navigation}) {
+export default function DetailProduk({navigation,route}) {
+    const [productNama, setProductNama] = useState(route.params.nama);
+    const [productHarga, setProductHarga] = useState(route.params.harga);
+    const [productRating, setProductRating] = useState(route.params.rating);
+    const [productReview, setProductReview] = useState(route.params.review);
+    const [productSpesifikasi, setProductSpesifikasi] = useState(route.params.spesifikasi);
 
     const dummyReview = [
-        { name: 'Ihza', rating: 5, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+        { name: 'Ihza' , rating: productRating, review: 'Lorem' },
         { name: 'Widodo', rating: 3, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     ]
 
@@ -50,14 +55,14 @@ export default function DetailProduk({navigation}) {
 
             <ScrollView>
                 {/* PRODUCT */}
-                {/* <Image source={require('./assets/mac.jpg')} style={styles.Image} /> */}
+                <Image source={require('../assets/images/macbook-pro-13-og-202011.jpg')} style={styles.Image} />
                 <View style={{ paddingHorizontal: 10 }}>
-                    <Text style={{ fontSize: 28, fontWeight: 'bold', color: '#ec994b' }}>IDR 17.000.000</Text>
-                    <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Macbook Retina 256 gb</Text>
+                    <Text style={{ fontSize: 28, fontWeight: 'bold', color: '#ec994b' }}>IDR {productHarga}</Text>
+                    <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{productNama}</Text>
                     <View style={styles.ratingContainer} >
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                             <ProductRating />
-                            <Text style={{ marginLeft: 5, fontSize: 18 }}>5.0</Text>
+                            <Text style={{ marginLeft: 5, fontSize: 18 }}>{productRating}</Text>
                         </View>
                         <Text style={{ alignSelf: 'flex-end', fontSize: 14, color: '#adadad' }}>100 Review</Text>
                     </View>
@@ -67,15 +72,7 @@ export default function DetailProduk({navigation}) {
                 <View style={styles.spesifikasiContainer}>
                     <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 5, color: '#ec994b' }}>Spesifikasi</Text>
                     <Text>
-                        Warna silver
-                        | Layar Retina 12 inch
-                        | Resolusi layar 1440 x 900
-                        | Processor Intel Core i5 quad-core 2,4 GHz
-                        | Penyimpanan SSD 256 GB
-                        | Memori 8 GB DDR3
-                        | Grafis Intel Iris Plus Graphics 655
-                        | Kamera HD FaceTime 720p
-                        | Audio Speaker stereo
+                        {productSpesifikasi}
                     </Text>
                 </View>
 

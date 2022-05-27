@@ -1,4 +1,5 @@
 import * as React from 'react';
+// import React, { useState, useEffect } from 'react';
 // import ListBarang from './screens/list_barang';
 // import Navigator from './routes/homeStack';
 import ListBarang from './screens/ListBarang'
@@ -11,6 +12,7 @@ import Review from './screens/Review';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='ListBarang' screenOptions={{ headerShown:false }}>
