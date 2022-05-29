@@ -10,6 +10,7 @@ const Review = ({navigation}) => {
 
   const starImgFilled = 'https://raw.githubusercontent.com/tranhonghan/images/main/star_filled.png'
   const starImgCorner = 'https://raw.githubusercontent.com/tranhonghan/images/main/star_corner.png'
+  
 
   const CustomRatingBar = () => {
     return(

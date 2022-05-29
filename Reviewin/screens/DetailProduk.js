@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 import { FlatList, StyleSheet, Text, View, Image, ScrollView, Pressable } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
@@ -7,7 +7,7 @@ export default function DetailProduk({navigation,route}) {
     const [productNama, setProductNama] = useState(route.params.nama);
     const [productHarga, setProductHarga] = useState(route.params.harga);
     const [productRating, setProductRating] = useState(route.params.rating);
-    const [productReview, setProductReview] = useState(route.params.review);
+    const [productImage, setProductImage] = useState(route.params.image);
     const [productSpesifikasi, setProductSpesifikasi] = useState(route.params.spesifikasi);
 
     const dummyReview = [
@@ -41,7 +41,16 @@ export default function DetailProduk({navigation,route}) {
             </View>
         )
     }
-
+    // const [reviews, setReviews] = useState([])
+    // useEffect(() => {
+    //     fetch(`https://reviewin-api.herokuapp.com/review`,{
+    //         method:'GET'
+    //     })
+    //     .then((res)=> res.json())
+    //     .then((reviews)=>{
+    //         setReview(reviews) 
+    //     })
+    // }, [])
     return (
         <View style={styles.container}>
 
@@ -55,7 +64,10 @@ export default function DetailProduk({navigation,route}) {
 
             <ScrollView>
                 {/* PRODUCT */}
-                <Image source={require('../assets/images/macbook-pro-13-og-202011.jpg')} style={styles.Image} />
+                <Text>
+                    {/* {productImage} */}
+                </Text>
+                <Image source={{uri:productImage}} style={styles.Image} />
                 <View style={{ paddingHorizontal: 10 }}>
                     <Text style={{ fontSize: 28, fontWeight: 'bold', color: '#ec994b' }}>IDR {productHarga}</Text>
                     <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{productNama}</Text>
