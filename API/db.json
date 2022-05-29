@@ -1,0 +1,35 @@
+{
+    "produk":[
+        {
+            "id": "1",
+            "harga": "16.399.000",
+            "nama": "Lenovo Yoga Slim 7 Pro 14ACH5 D",
+            "rating": "4.5",
+            "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/29/e5b8b6c8-05ff-4a2e-8806-4d8cce6dac6b.png",
+            "spesifikasi": "AMD Ryzen 7 5800HS Creator Edition (8C / 16T, 3.2 / 4.4GHz, 4MB L2 / 16MB L3)\r\nNVIDIA GeForce MX450 2GB GDDR6\r\nChipset: AMD SoC Platform\r\nMemory: 16GB Soldered LPDDR4x-4266\r\nMemory Slots: Memory soldered to systemboard, no slots, dual-channel\r\nMax Memory: 16GB soldered memory, not upgradable\r\nStorage: 1TB SSD M.2 2280 PCIe 3.0x4 NVMe\r\nStorage Support: One drive, up to 1TB M.2 2280 SSD\r\nCard Reader: None\r\nOptical: None\r\nAudio Chip: High Definition (HD) Audio, Realtek ALC3306 codec\r\nSpeakers: Stereo speakers, 2W x2, Dolby Atmos, HARMAN-branded\r\nCamera: IR & 720p + ToF Sensor\r\nMicrophone: 2x, Array\r\nBattery: Integrated 61Wh\r\nPower Adapter: 5W USB-C (3-pin)\r\nDisplay: 14\" 2.8K (2880x1800) IPS 400nits Glossy, 90Hz, 100% sRGB, Glass, Dolby Vision\r\nTouchscreen: None\r\nKeyboard: Backlit, English\r\nSurface Treatment: Anodizing Sandblasting\r\nCase Material: Aluminium (Top), Glass (Display Cover), Aluminium (Bottom)\r\nDimensions (WxDxH): 312.4 x 221.4 x 14.6-16.9 mm (12.29 x 8.72 x 0.57-0.67 inches)\r\nWeight: 1.4 kg (3.09 lbs)\r\nOperating System: Windows 11 Home 64, English\r\n\r\nEthernet: None\r\nWLAN + Bluetooth: 11ax, 2x2 + BT5.1\r\nStandard Ports:\r\n2x USB-C 3.2 Gen 2 (support data transfer, Power Delivery 3.0 and DisplayPort 1.4)\r\n1x Headphone / microphone combo jack (3.5mm)\r\n1x USB 3.2 Gen 1 (Always On)\r\n\r\nMonitor Cable: None\r\nSecurity Chip: Firmware TPM 2.0\r\nFingerprint Reader: None\r\nOther Security: IR camera for Windows Hello"
+        },
+        {
+            "id": "2",
+            "harga": "16.799.000",
+            "nama": "Lenovo Ideapad Slim 5 PRO 16ACH6",
+            "rating": "5.0",
+            "image":"https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/11/1/d7dfd31e-be50-4c79-bc07-c70a501d0b7d.jpg",
+            "spesifikasi": "☑ Processor : AMD Ryzen 7 5800H (8C / 16T, 3.2 / 4.4GHz, 4MB L2 / 16MB L3)\r\n☑ RAM : 16GB Soldered DDR4-3200\r\n☑ Storage : 512 GB SSD M.2 2280 PCIe 3.0x4 NVMe\r\n☑ VGA : NVIDIA GeForce RTX 3050 4GB GDDR6, Boost Clock 712 / 1057MHz, TGP 35W\r\n☑ Display : 16\" WQXGA (2560x1600) IPS 350nits Anti-glare, 60Hz, 100% sRGB\r\n☑ Sistem Operasi : Windows 11 Home 64bit + Microsoft Office Home & Student 2021\r\n☑ Warna : Cloud Grey / Storm Grey\r\n☑ Kamera : IR & 720p + ToF Sensor\r\n☑ Audio : Stereo speakers, 2W x2, optimized with Dolby Atmos\r\n\r\nAntarmuka :\r\n- 1x Card reader\r\n- 1x USB 3.2 Gen 1\r\n- 1x USB 3.2 Gen 1 (Always On)\r\n- 1x HDMI 1.4b\r\n- 1x Headphone / microphone combo jack (3.5mm)\r\n- 1x USB-C 3.2 Gen 2 (support data transfer, Power Delivery 3.0 and DisplayPort 1.4)\r\n\r\n☑ Keyboard : Backlit\r\n☑ Bluetooth® 5.1\r\n☑ WLAN: WiFi 6 802.11AX (2 x 2)\r\n☑ Battery : Integrated 75Wh\r\n☑ Adapter : 135W Slim Tip\r\n\r\n☑ Dimensi : 356 x 251 x 16.9-18.4 mm\r\n☑ Berat : 1.9 kg\r\n\r\n\r\n"
+        }
+    ],
+    "review":[
+        {
+            "id": "1",
+            "username": "Alfian",
+            "rating": "5",
+            "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu orci ut nulla convallis scelerisque vel quis lacus. Vivamus a finibus est. Donec vehicula malesuada semper. Etiam tortor enim, pulvinar sed mi sit amet, venenatis faucibus sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque nec neque quis sapien accumsan posuere vitae at mi. Donec iaculis pretium metus, non blandit nibh porttitor in. Nulla at libero egestas, rhoncus erat tempor, blandit felis. Pellentesque tempus, sapien ut malesuada tristique, ante lectus gravida nibh, id lobortis elit lorem ut enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris porttitor augue sed lectus dapibus, consequat tristique dui tincidunt."
+        },
+        {
+            "id": "2",
+            "username": "Widodo",
+            "rating": "4",
+            "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu orci ut nulla convallis scelerisque vel quis lacus. Vivamus a finibus est. Donec vehicula malesuada semper. Etiam tortor enim, pulvinar sed mi sit amet, venenatis faucibus sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque nec neque quis sapien accumsan posuere vitae at mi. Donec iaculis pretium metus, non blandit nibh porttitor in. Nulla at libero egestas, rhoncus erat tempor, blandit felis. Pellentesque tempus, sapien ut malesuada tristique, ante lectus gravida nibh, id lobortis elit lorem ut enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris porttitor augue sed lectus dapibus, consequat tristique dui tincidunt."
+        }
+        
+    ]
+}
