@@ -11,7 +11,7 @@ export default function DetailProduk({navigation,route}) {
     const [productSpesifikasi, setProductSpesifikasi] = useState(route.params.spesifikasi);
 
     const dummyReview = [
-        { name: 'Ihza' , rating: productRating, review: 'Lorem' },
+        { name: 'Ihza' , rating: productRating, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
         { name: 'Widodo', rating: 3, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     ]
 

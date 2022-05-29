@@ -56,7 +56,7 @@ const Review = ({navigation}) => {
         <TextInput style={styles.inputreview}/>
         <Text style={styles.teksform}>Rating</Text>
         <CustomRatingBar/>
-        <Pressable style={styles.submit}>
+        <Pressable style={styles.submit} onPress={()=>navigation.navigate('ListBarang')}>
           <Text style={styles.tekssubmit}>Submit</Text>
         </Pressable>
       </View>

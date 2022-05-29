@@ -116,16 +116,11 @@ export default function ListBarang({navigation}) {
                             </View>
                             <View style={[{alignItems:"flex-end"}]}>
                                 <TouchableOpacity style={[{alignSelf:"flex-end", flexDirection:"row"}]} onPress={()=>navigation.navigate('DetailProduk', {
-
                                     nama: product.nama,
                                     harga: product.harga,
-                                    // harga: products.map(product => product.harga.indexOf(products[i].harga) > -1 ? product.harga : null),
                                     rating: product.rating,
                                     image: product.image,
                                     spesifikasi: product.spesifikasi,
-                                    // products.map(product => product.rating.indexOf(products[i].rating) > -1 ? product.rating : null),
-                                    // image: products.map(product => product.image.indexOf(products[i].image) > -1 ? product.image : null),
-                                    // spesifikasi: products.map(product => product.spesifikasi.indexOf(products[i].spesifikasi) > -1 ? product.spesifikasi : null),
                                 })}>
                                 <Text>
                                     Detail
