@@ -1,43 +1,23 @@
 import React, { useState } from "react";
-import { Text, View, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import "./Modal.css";
+import { Text, View, } from 'react-native';
+
 import { AntDesign } from '@expo/vector-icons';
 
-export default function Modal() {
-  const [modal, setModal] = useState(false);
+export default function Popup(props) {
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
+  const changeState = (bool) => {
+    props.closePopUp(bool);
   }
 
   return (
-    <>
-      <button onClick={toggleModal} className="btn-modal">
-        SUBMIT
-      </button>
-
-      {modal && (
-        <div className="modal">
-          <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
-            <h2>Berhasil Meng Ripiu</h2>
-            <AntDesign name="checkcircle" size={75} color="black"/>
-            <br></br>
-            <br></br>
-            <button 
-            className='kembali-modal'
-            onClick={toggleModal}>
-              Kembali ke Home
-            </button>
-          </div>
-        </div>
-      )}
-          </>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0,0,0,0.5)' }}>
+      <View style={{ backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', padding: 20, borderRadius: 10 }}>
+        <View style={{ alignSelf: 'flex-end' }}>
+          <AntDesign name="close" size={30} color="black" onPress={() => changeState()} />
+        </View>
+        <AntDesign name="checkcircle" size={150} color="green" />
+        <Text style={{ marginTop: 10, fontSize: 20, fontWeight: 'bold' }}>Submit Review Berhasil</Text>
+      </View>
+    </View>
   );
 }

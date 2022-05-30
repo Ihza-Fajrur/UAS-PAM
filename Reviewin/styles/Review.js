@@ -2,41 +2,31 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
-        justifyContent: 'center',
         flex: 1,
+        paddingHorizontal: 20,
     },
     header: {
         flexDirection: 'row',
-        position: 'absolute',
-        top: 70,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 10,
+        paddingVertical: 40
     },
-    teksheader: {
-        fontSize: 30,
-        paddingLeft: 50,
-        paddingRight: 50,
-        bottom: 5,
-    },
-    form: {
-        position: 'absolute',
-        top: 150,
-        left: 30,
-        justifyContent: 'center',
-    },
-    inputnama: {
+    inputNama: {
         borderWidth: 1,
         borderRadius: 5,
         marginBottom: 20,
+        paddingVertical: 3,
+        paddingHorizontal: 10
     },
-    inputreview: {
+    inputReview: {
+        textAlignVertical: 'top',
+        height: 100,
         borderWidth: 1,
-        height: 200,
-        width: 300,
-        borderRadius: 10,
+        borderRadius: 5,
         marginBottom: 20,
-    },
-    teksform: {
-        marginBottom: 5,
+        paddingVertical: 10,
+        paddingHorizontal: 10
     },
     CustomRatingBarStyle: {
         justifyContent: 'center',
@@ -46,20 +36,19 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
     },
+    submitContainer: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 50
+    },
     submit: {
-        position: 'absolute',
-        alignSelf: 'center',
-        backgroundColor: 'orange',
-        bottom: -225,
-        width: 200,
-        height: 40,
+        backgroundColor: '#ec994b',
+        width: '60%',
+        height: 50,
         borderRadius: 30,
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    tekssubmit: {
-        fontWeight: 'bold',
-        color: 'white'
     },
 });
 
