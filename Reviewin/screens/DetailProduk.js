@@ -1,9 +1,9 @@
-import React,{ useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FlatList, StyleSheet, Text, View, Image, ScrollView, Pressable } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function DetailProduk({navigation,route}) {
+export default function DetailProduk({ navigation, route }) {
     const [productNama, setProductNama] = useState(route.params.nama);
     const [productHarga, setProductHarga] = useState(route.params.harga);
     const [productRating, setProductRating] = useState(route.params.rating);
@@ -11,7 +11,7 @@ export default function DetailProduk({navigation,route}) {
     const [productSpesifikasi, setProductSpesifikasi] = useState(route.params.spesifikasi);
 
     const dummyReview = [
-        { name: 'Ihza' , rating: productRating, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+        { name: 'Ihza', rating: productRating, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
         { name: 'Widodo', rating: 3, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
     ]
 
@@ -57,9 +57,9 @@ export default function DetailProduk({navigation,route}) {
 
             {/* HEADER */}
             <View style={styles.header}>
-                <Ionicons name="chevron-back" size={24} color="black" onPress={()=>navigation.navigate('ListBarang')} />
-                <Text style={{ fontSize: 18 }}>Detail Product</Text>
-                <AntDesign name="home" size={24} color="black" onPress={()=>navigation.navigate('ListBarang')}/>
+                <Ionicons name="chevron-back" size={24} color="black" onPress={() => navigation.navigate('ListBarang')} />
+                <Text style={{ fontSize: 22 }}>Detail Product</Text>
+                <AntDesign name="home" size={24} color="black" onPress={() => navigation.navigate('ListBarang')} />
             </View>
 
             <ScrollView>
@@ -67,7 +67,7 @@ export default function DetailProduk({navigation,route}) {
                 <Text>
                     {/* {productImage} */}
                 </Text>
-                <Image source={{uri:productImage}} style={styles.Image} />
+                <Image source={{ uri: productImage }} style={styles.Image} />
                 <View style={{ paddingHorizontal: 10 }}>
                     <Text style={{ fontSize: 28, fontWeight: 'bold', color: '#ec994b' }}>IDR {productHarga}</Text>
                     <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{productNama}</Text>
@@ -122,7 +122,7 @@ export default function DetailProduk({navigation,route}) {
 
             {/* FOOTER */}
             <View style={styles.footer}>
-                <Pressable style={styles.reviewButton} onPress={()=>navigation.navigate('Review')}>
+                <Pressable style={styles.reviewButton} onPress={() => navigation.navigate('Review')}>
                     <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 16 }}>Review</Text>
                 </Pressable>
             </View>
